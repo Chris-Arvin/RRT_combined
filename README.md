@@ -6,3 +6,5 @@
 ５．skip-tree：在一个完整路径生成后，考虑可否略过中间的一些点。
 ６．informed rrt：生成一个可行路径后，以起始点和终止点为椭圆的焦点，路径长度为２a，构建一个椭圆，在构建下条路径时，只在该椭圆内random新点。
 ７．通过tkinter实现了ＧＵＩ，详细内容见代码。rrt_line为前段生成路径点，rrt_crooked为后端进行优化后，得到路径。
+
+视频展示见show.mp4或https://youtu.be/N4fH9KNgiVY
