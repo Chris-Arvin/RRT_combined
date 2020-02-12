@@ -473,9 +473,8 @@ class rrt:
                 col = np.linspace(temp1.col, temp3.col, int(self.step_size), endpoint=True)
                 row = np.linspace(temp1.row, temp3.row, int(self.step_size), endpoint=True)
                 for j in range(min(len(col), len(row))):
-                    for c in self.Co:
-                        if c[0] <= col[j] and c[2] >= col[j] and c[1] <= row[j] and c[3] >= row[j]:
-                            flag=False
+                    if self.col_map[int(col[j])][int(row[j])]>100:
+                        flag=False
                 if flag:
                     path.pop(t+1)
                 else:
